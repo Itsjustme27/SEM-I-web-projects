@@ -1,0 +1,33 @@
+.body{
+    background-color: coral;
+}
+
+.container{
+    position: relative;
+    width: fit-content;
+    height: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1); 
+    text-align: center;
+    margin: 50px 0 0 40%;
+    background-color: plum;
+}
+
+.login-ele{
+    padding: 30px;  
+    margin: 20px;
+}
+
+label{
+    display: block;
+    margin-bottom: 6px;
+    margin-top: 20px;
+    font-family: 'Fredoka One', cursive;
+    text-align: start;
+}
+
+
+button{
+    position: absolute;
+    align-items: center;
+    margin: 50px;
+}   

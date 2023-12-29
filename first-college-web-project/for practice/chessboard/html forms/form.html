@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <label for="name" required>Full Name:</label><br>
+            <input type="text" placeholder="Enter Name" id="name"><br>
+
+            <label for="state">State</label><br>
+            <select name="state" id="state" placeholder="Enter state">
+                <option value="c-option">Choose Option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select><br>
+
+            <label for="date">Date:</label><br>
+            <input type="date" id="date"><br>
+
+            <label for="employees">NO. of employees</label><br>
+            <input type="number" placeholder="Enter company size" id="employees"><br>
+
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox">Agree with our terms and policy</label><br>
+
+            <label for="email" aria-required="true">Email:</label><br>
+            <input type="text" placeholder="Enter email" id="email"><br>
+
+            <label for="password" aria-required="true">Password</label><br>
+            <input type="password" placeholder="Enter Password" id="password"><br>
+
+            <button>Submit</button>
+            
+        </form>
+    </div>
+</body>
+</html>

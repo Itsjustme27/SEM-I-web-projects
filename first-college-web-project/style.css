@@ -1,0 +1,12 @@
+
+
+table,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    height: auto;
+    width: auto;
+    height: auto;
+    width: 100px;
+    text-align: center;
+    margin: 20px;
+}

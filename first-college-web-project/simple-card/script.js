@@ -1,0 +1,1 @@
+const submit = () => alert("Your item has been added to cart!");

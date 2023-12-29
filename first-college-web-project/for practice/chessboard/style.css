@@ -1,0 +1,36 @@
+body{
+    background-color: black;
+}
+
+.navbar{
+    display: flex;
+    background-color: red;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.button{
+    padding: 20px;
+}
+
+.nav-items{
+    display: flex;
+    gap: 10px;
+
+}
+
+h1{
+   margin-left: 20px;
+   color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+a :hover{
+    color: blue;
+}
