@@ -1,0 +1,36 @@
+.parent{
+    display: grid;
+    grid-template-areas: 
+    "head head head head head"
+    "side side third third fourth"
+    "side side fifth fifth fifth";
+    background-color: red;
+    padding: 20px;
+    gap: 10px;
+}
+
+.child1{
+    grid-area: head;
+}
+
+.child2{
+    grid-area: side;
+}
+
+.child3{
+    grid-area: third;
+}
+
+.child4{
+    grid-area: fourth;
+}
+
+.child5{
+    grid-area: fifth;
+}
+
+.parent > div{
+    background-color: antiquewhite;
+    padding: 20px;
+    text-align: center;
+}
