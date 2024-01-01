@@ -1,3 +1,25 @@
+@media screen and (min-width:800px){
+    .content{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about{
+        display: flex;
+        gap: 100px;
+        align-items: center;
+        width: 100%;
+        height: 600px;
+        background: linear-gradient(black,  slateblue);
+        padding: 0 20px 0 0;
+        margin: 0 0 0 -10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        font-size: large;
+    }
+}
+
+
 body{
     background-color: whitesmoke;
 }
@@ -5,12 +27,13 @@ body{
 .container{
     position: relative;
 }
+
 .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 60px;
-    background-color: red;
+    background: linear-gradient(red, crimson);
     width: 100%;
     margin: -10px 0 0 -10px;
     padding: 0 20px 0 0;
@@ -32,10 +55,7 @@ a:hover{
     background-color: white;
 }
 
-.content{
-    display: flex;
-    justify-content: space-between;
-}
+
 
 .text{
     margin: 50px;
@@ -48,6 +68,7 @@ a:hover{
 }
 
 .image{
+
     margin: 50px;
     height: 500px;
     width: 300px;
@@ -82,27 +103,37 @@ button:hover{
 
 .content{
     height: 500px;
-    background: linear-gradient(blue, black);
+    background: linear-gradient(steelblue, black);
     width: 100%;
     margin: -10px 0 0 -10px;
     padding: 0 20px 0 0;
 }
 
-.about{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 0 0 0;
-}
+
+
 
 
 #lang{
-    height: 300px;
-    width: 500px;
-    padding: 60px;
+    height: auto;
+    width: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 1);
+    margin: 0 0 0 20px;
 }
 
 .me{
+    width: 300px;
+    height: 300px;
+    margin: 0 0 0 50px;
+    font-size: larger;
+}
+
+.projects{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.project{
     width: 300px;
     height: 300px;
     margin: 0 0 0 50px;
