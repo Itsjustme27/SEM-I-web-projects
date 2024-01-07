@@ -1,17 +1,25 @@
-#image{
-    height: 200px;
-    width: 200px;
-}
+@media screen and (max-width: 500px){
 
-@media screen and (min-width:800px){
-    .content {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .text{
-        height: 500px;
-        width: 500px;
+    p{
+        font-size: 14px;
+        background-color: green;
     }
 }
+
+@media  (min-width: 500px) and (max-width: 1000px){
+    p{
+        font-size: 18px;
+        background-color: blue;
+    }
+}
+
+@media screen and (min-width: 1000px) { 
+    p{
+        font-size: 24px;
+        background-color: red;
+    }
+    
+}
+
+
 

@@ -1,0 +1,25 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.badge{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    background-color: red;
+    border-radius: 200px;
+}
+.badge::after{
+    position: absolute;
+    content: "";
+    height: calc(100% + 4px);
+    width: calc(100% + 4px);
+    border: 2px solid blue;
+    border-radius: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: blue;
+    z-index: -1;
+}
