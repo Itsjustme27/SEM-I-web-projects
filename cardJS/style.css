@@ -1,0 +1,101 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font: url(https://fonts.google.com/specimen/Outfit);
+    font-family: monospace;
+    font-weight: 400, 700 ;
+    background-color: hsl(212, 45%, 89%);
+    margin: 10rem 0 0 0;
+}
+
+#container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 2rem;
+    width: 20rem;
+    height: 38.8rem;
+    background-color: aliceblue;
+}
+
+#head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0 0 0;
+}
+
+#footer{
+    margin: 3rem;
+    text-align: center;
+}
+
+#profilePic{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 200px;
+    display: none;
+}
+#profilePic:hover{
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 1);
+}
+
+#img{
+    display: none;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 2rem;
+    margin: 0 0 0 2.5rem;
+    position: absolute;
+}
+
+#lorem{
+    padding: 2rem;
+}
+
+#time{
+    position: absolute;
+    margin: 4rem 0 0 6rem;
+}
+
+
+section{
+    position: relative;
+    display: flex;
+}
+
+.box{
+    background-color: grey;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 2rem;
+    margin: 0 0 0 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buffer{
+    height: 3rem;
+    width: 3rem;
+    background-color: grey;
+    border: 5px dotted white;
+    border-radius: 50%;
+    animation: ghumyo 2s infinite ease-in-out;
+}
+
+@keyframes ghumyo {
+    0%{
+
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg/0);
+    }
+}
