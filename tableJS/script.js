@@ -24,3 +24,4 @@ const table = () => {
 }
 
 table();
+//TODO: use a button for toggling the values.

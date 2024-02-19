@@ -1,4 +1,5 @@
+let text = document.querySelector('#text')
 const change = () => {
-    let text = document.getElementsById("text");
-    text.classList.toggle("text");
+    text.classList.toggle('text');
+
 }
