@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mapping data</title>
+<style>
+img{
+width: 400px;
+height: 300px;
+object-fit: cover;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+</style>
+</head>
+<body>
+<div id="container" class="container">
+
+</div>
+</body>
+<script src="data.js"></script>
+<script>
+let usersContainer = document.getElementById("container");
+
+const mappedUsers = users.map((user, index) => {
+return `<div class="project-card" key=${index}>
+<img src='${user.avatar}' alt="user profile image" />
+<div class="details">
+<p>${user.name}</p>
+<p>${user.home_address}</p>
+<p>${user.office_address}</p>
+</div>
+</div>`
+});
+usersContainer.innerHTML = mappedUsers
+</script>
+</html>
