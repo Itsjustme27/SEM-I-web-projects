@@ -1,0 +1,37 @@
+<html>
+   <head><meta charset="utf-8"></head><head></head><body>
+   <input type="number" id="search" >
+   <div id="output"> 
+      
+   </div> 
+   <script>
+      let output = document.getElementById('output');
+      function fetchData(a) {
+         fetch(`https://dummyjson.com/products/${a}`)
+         .then(response => response.json())
+         .then(data => {
+            output.innerHTML=`<h1>${data.id}</h1>
+            <h3>Brand: ${data.brand}</h3>
+            <p><strong>Category: </strong> ${data.category}</p>
+            <p><strong>Price: </strong> ${data.price}</p>
+            <p><strong>Rating: </strong> ${data.rating}</p>`
+            //output.innerHTML += "id = " + data.id + "<br/>";
+            //output.innerHTML += "brand = " + data.brand + "<br/>";
+            //output.innerHTML += "category = " + data.category + "<br/>";
+            //output.innerHTML += "price = " + data.price + "<br/>";
+            //output.innerHTML += "rating = " + data.rating + "<br/>";
+            //output.innerHTML += "stock = " + data.stock + "<br/>";
+         }).catch(error =>{
+            console.error("Error fetching data: ", error);
+            output.innerHTML = `<p>Error fetching data. Please check your connection.</p>`;
+         });
+      }
+
+      let search = document.getElementById('search');
+      search.addEventListener('change', function(){
+         fetchData(this.value);
+      })
+      // fetchData(4)
+   </script>
+
+</body></html>
