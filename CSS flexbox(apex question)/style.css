@@ -1,0 +1,50 @@
+.header, .navigation, .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 16rem;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    margin: 1rem;
+}
+
+.content, .section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 10rem;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    margin: 1rem;
+}
+
+.aside{
+    display: flex;
+    height: 11rem;
+    width: 4rem;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.flex-container{
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.container{
+    background-color: grey;
+    width: min-content;
+    padding: 1px;
+}
